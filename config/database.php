@@ -4,14 +4,12 @@
 class Database
 {
     private $host = "localhost";
-    private $db_name = "tinder_like";
-    private $username = "root";
-    private $password = "Aristote@2004";
+    private $db_name = "";
+    private $username = "";
+    private $password = "";
     private $conn = null;
 
-    /**
-     * Return a PDO connection (singleton pattern).
-     */
+  
     public function getConnection(): PDO
     {
         if ($this->conn !== null) {
